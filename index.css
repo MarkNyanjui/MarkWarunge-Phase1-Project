@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    font: bold 30px Arial, Helvetica, sans-serif;
+    background-color: white;
+
+
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 30, 128);
+    background-color: black;
+}
+
+#Image {
+    width: 100%
+}
+
+.left-align {
+    text-align: left;
+}
+
+.result {
+    margin-top: 10px; 
+}
+
