@@ -1,3 +1,5 @@
+
+// All fetch functions are enclosed into a single function to avoid repetition
 const fetchFunctions = [
     { func: fetchBit, buttonId: "btn1", elementId: "bit" },
     { func: fetchEth, buttonId: "btn2", elementId: "eth" },
@@ -11,11 +13,11 @@ const fetchFunctions = [
     { func: fetchAvax, buttonId: "btn10", elementId: "avax" }
 ]
 
-
+// Execution of the fetching process using the array.forEach method
 fetchFunctions.forEach(({ func, buttonId }) => {
     document.getElementById(buttonId).addEventListener("click", func)
 });
-
+//This is the output of the fetching process
 function handleResponse(elementId) {
     return function (data) {
         document.getElementById(elementId).innerText = JSON.stringify(data)
